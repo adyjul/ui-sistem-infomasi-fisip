@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.min.css">
+
+    <style>
+    .tgl{ 
+        width: 83px; 
+        position: absolute; 
+        background-color: #fff; 
+        padding: 14px; 
+        text-align: center; 
+        color: white; 
+        right: 30px; 
+        font-size: 25px; 
+        top: -5px; 
+        border-radius: 5px; 
+    } 
+  .tgl p{ 
+   margin-bottom:0px; 
+   margin-top:0px; 
+   color:black; 
+   font-weight:bold; 
+  } 
+ 
+  .icon-jurusan{ 
+   height:100px;     
+  } 
+    </style>
 </head>
 <body>
     <div class="content-page">
@@ -149,19 +174,20 @@
                     </div>
                </div>
             </div>            
-            <div class="col-md-6">
-                <div class="video-play">
-                    <video autoplay muted  id="video1" class="video1">
-                        <source src="./video/video-1.mp4" type="video/mp4">
-                    </video>
-                    <video muted  id="video2" class="video2">
-                        <source src="./video/video-2.mp4" type="video/mp4">
-                    </video>
-                    <video muted  id="video3" class="video3">
-                        <source src="./video/video-3.mp4" type="video/mp4">
-                    </video>        
+            <div class="col-md-6">                
+                <div class="video-play" style="height: 53%;">
+                        <video autoplay muted  id="video1" class="video1">
+                            <source src="./video/video-1.mp4" type="video/mp4">
+                        </video>
+                        <video muted  id="video2" class="video2">
+                            <source src="./video/video-2.mp4" type="video/mp4">
+                        </video>
+                        <video muted  id="video3" class="video3">
+                            <source src="./video/video-3.mp4" type="video/mp4">
+                        </video>        
                 </div>     
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                
+                <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <div class="card agenda" style="width: 100%; margin-top: 23rem; border-radius: 15px; position: relative; z-index: 1;overflow: hidden;">
@@ -224,11 +250,27 @@
                         </div>  
                       </div>
                     </div>
-                  </div>           
-            
-                    
+                </div>            -->                               
                 
-            </div>           
+                <div class="card" style="width: 100%; border-radius:10px"> 
+                    <div class="gambar" style="position:relative;overflow:hidden;"> 
+                        <img src="./images/event.jpeg" class="card-img-top" alt="..."> 
+                        <div class="tgl"> 
+                            <p>28</p> 
+                            <p style="margin-top:-8px">Okt</p> 
+                        </div> 
+                    </div> 
+                    <div class="card-body">        
+                        <p style="font-weight:bold">Nama : </p> 
+                        <p>Jalan sehat</p> 
+                        <hr>  
+                        <p style="font-weight:bold">lokasi : </p> 
+                        <p>Desa Taman Indah, Malang Selatan</p>        
+                        <hr>         
+                    </div> 
+                </div>         
+            </div> 
+           
         </div>
         
         <footer> 
